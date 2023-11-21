@@ -17,3 +17,19 @@ function exemplo2(){
 };
 
 exemplo2();
+
+let guardaValor = (valor1, valor2) => {
+    if (valor1 < valor2) {
+        let valorAlt = valor1;
+        valor1 = valor2;
+        valor2 = valorAlt;
+    }
+    let calculo = valor1 - valor2;
+    return calculo;
+};
+
+let resultado1 = guardaValor(20, 10);
+let resultado2 = guardaValor(20, 40);
+
+console.log(resultado1);
+console.log(resultado2);
