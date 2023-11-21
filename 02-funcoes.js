@@ -76,3 +76,13 @@ let resultadoB = calculaMetade(333);
 
 console.log(resultadoA);
 console.log(resultadoB);
+
+console.log("-----------------------------------------");
+
+const nomePessoa = nome => nome.toUpperCase();
+
+console.log(nomePessoa("Victor"));
+console.log(nomePessoa("Jhon"));
+console.log(nomePessoa("Phelipe"));
+
+console.log("-----------------------------------------");
