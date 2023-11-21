@@ -24,6 +24,7 @@ const guardaValor = (valor1, valor2) => {
         valor1 = valor2;
         valor2 = valorAlt;
     }
+    // Math.abs(valor1 - valor2);
     let calculo = valor1 - valor2;
     return calculo;
 };
