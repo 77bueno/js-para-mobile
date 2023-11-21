@@ -79,10 +79,10 @@ console.log(resultadoB);
 
 console.log("-----------------------------------------");
 
-const nomePessoa = nome => nome.toUpperCase();
+const converteMaiusculas = nome => nome.toUpperCase();
 
-console.log(nomePessoa("Victor"));
-console.log(nomePessoa("Jhon"));
-console.log(nomePessoa("Phelipe"));
+console.log(converteMaiusculas("Victor"));
+console.log(converteMaiusculas("Jhon"));
+console.log(converteMaiusculas("Phelipe"));
 
 console.log("-----------------------------------------");
