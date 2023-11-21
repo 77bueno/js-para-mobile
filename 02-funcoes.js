@@ -18,7 +18,7 @@ function exemplo2(){
 
 exemplo2();
 
-let guardaValor = (valor1, valor2) => {
+const guardaValor = (valor1, valor2) => {
     if (valor1 < valor2) {
         let valorAlt = valor1;
         valor1 = valor2;
@@ -33,3 +33,36 @@ let resultado2 = guardaValor(20, 40);
 
 console.log(resultado1);
 console.log(resultado2);
+
+
+/* Sintaxe Arrow Function */
+const exemplo3 = () => {
+    console.log("Arrow Function");
+};
+
+exemplo3();
+
+/* const saudacao = (cliente) => {
+    console.log(`Olá ${cliente}`);
+}; */
+
+/*  Omitir os parênteses do parãmetro (SOMENTE QUANDO FOR 1)
+const saudacao = cliente => {
+    console.log(`Olá ${cliente}`);
+} */
+
+/* Omitir as { } (SOMENTE QUANDO FOR UMA ÚNICA INSTRUÇÃO) */
+const saudacao = cliente => console.log(`Olá ${cliente}`);
+
+saudacao("Fulano");
+saudacao("Ciclano");
+
+const calculaMetade = (valor) => {
+    return valor / 2;
+};
+
+let resultadoA = calculaMetade(100);
+let resultadoB = calculaMetade(333);
+
+console.log(resultadoA);
+console.log(resultadoB);
