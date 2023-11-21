@@ -28,11 +28,16 @@ const guardaValor = (valor1, valor2) => {
     return calculo;
 };
 
+// Forma IMPLÍCITA
+const guardaValorImp = (valor1, valor2) => valor1 - valor2;
+
 let resultado1 = guardaValor(20, 10);
 let resultado2 = guardaValor(20, 40);
-
+let resultado3 = guardaValorImp(30, 90);
+console.log("---------------------------------");
 console.log(resultado1);
 console.log(resultado2);
+console.log(resultado3);
 
 
 /* Sintaxe Arrow Function */
@@ -57,9 +62,13 @@ const saudacao = cliente => console.log(`Olá ${cliente}`);
 saudacao("Fulano");
 saudacao("Ciclano");
 
-const calculaMetade = (valor) => {
+// Arrow Function com retorno EXPLÍCITO
+const calculaMetadeOriginal = (valor) => {
     return valor / 2;
 };
+
+// Arrow Function com retorno IMPLÍCITO
+const calculaMetade = valor => valor / 2;
 
 let resultadoA = calculaMetade(100);
 let resultadoB = calculaMetade(333);
