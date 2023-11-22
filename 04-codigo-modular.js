@@ -3,7 +3,11 @@ para evitar conflitos entre módulos do mesmo nome */
 
 import { pessoa, livro, alunos as reprovados} from "./modulos/dados.js";
 import alunos from "./modulos/alunos.js";
-import { converteMaiusculas, converteMinusculas, formatamoeda } from "./modulos/funcoes.js";
+/* Importação manual de cada função */
+// import { converteMaiusculas, converteMinusculas, formatamoeda } from "./modulos/funcoes.js";
+
+/* Importação das funções através de um apelido/alias */
+import * as minhasFuncoes from "./modulos/funcoes.js";
 
 console.log(pessoa);
 console.log(pessoa.nome);
@@ -24,13 +28,16 @@ console.log("---------");
 console.log(reprovados); // Usando o módulo através de apelido
 console.log("-------------------------------------------");
 
-console.log( converteMaiusculas(reprovados[0]) );
-console.log( converteMinusculas(alunos[0]) );
+console.log( minhasFuncoes.converteMaiusculas(reprovados[0]) );
+console.log( minhasFuncoes.converteMinusculas(alunos[0]) );
 
 let preco1 = 1200.88;
 let preco2 = 100000.75;
 let preco3 = 500.8467;
 
-console.log(formatamoeda(preco1));
-console.log(formatamoeda(preco2));
-console.log(formatamoeda(preco3));
+console.log(minhasFuncoes.formatamoeda(preco1));
+console.log(minhasFuncoes.formatamoeda(preco2));
+console.log(minhasFuncoes.formatamoeda(preco3));
+
+console.log("-------------------------------------------");
+
