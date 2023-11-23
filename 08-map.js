@@ -19,8 +19,6 @@ console.log(cursos);
 
 // Exemplo 2: gerar um novo array apenas com os nomes dos cursos
 
-const titulos = cursos.map( (curso) => {
-    return curso.titulo
-} );
+const titulos = cursos.map( curso => curso.titulo );
 
 console.log(titulos);
