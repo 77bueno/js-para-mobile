@@ -20,5 +20,17 @@ console.log(cursos);
 // Exemplo 2: gerar um novo array apenas com os nomes dos cursos
 
 const titulos = cursos.map( curso => curso.titulo );
-
 console.log(titulos);
+
+
+console.log("------------------------------------------------");
+console.log("Exercício abaixo: ");
+
+const blackfriday = cursos.map( curso => curso.preco * 0.9 );
+console.log(blackfriday);
+
+console.log("------------------------------------------------");
+
+/* teste 
+const categorias = cursos.map( curso => curso.categoria);
+console.log( categorias ); */
