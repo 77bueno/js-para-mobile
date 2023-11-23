@@ -77,3 +77,24 @@ const { codigo: pedido, cursos, preco } = {
 console.log(pedido); // Pedido é um apelido
 console.log(cursos);
 console.log(preco);
+
+console.log("--------------------------------------------------------");
+
+
+// Destructuring para parâmetros de função
+function exibirDados(objeto) {
+    console.log(`Filme: ${objeto.titulo} - Ano: ${objeto.ano} `);
+}
+
+const filme1 = {
+    titulo: "Vingadores",
+    ano: 2012
+};
+
+const filme2 = {
+    titulo: "Barbie",
+    ano: 2023
+};
+
+exibirDados(filme1);
+exibirDados(filme2);
