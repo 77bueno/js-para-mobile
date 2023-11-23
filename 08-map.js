@@ -24,13 +24,21 @@ console.log(titulos);
 
 
 console.log("------------------------------------------------");
-console.log("Exercício abaixo: ");
 
 const blackfriday = cursos.map( curso => curso.preco * 0.9 );
 console.log(blackfriday);
 
 console.log("------------------------------------------------");
 
-/* teste 
+/* TESTE 
 const categorias = cursos.map( curso => curso.categoria);
 console.log( categorias ); */
+
+console.log("------------------------------------------------");
+console.log("Exercício abaixo: ");
+
+const cursosBlackfriday = cursos.map( curso => {
+    return { ...curso, preco: curso.preco * 0.9 }
+} );
+
+console.log(cursosBlackfriday);
