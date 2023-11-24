@@ -13,6 +13,7 @@ console.log(total);
 // Sem Reduce com for
 let acumuladora1 = 0;
 for ( let i = 0; i < valores.length; i++ ) {
+    // += operador soma e atribui
      acumuladora1 += valores[i];
 }
 
