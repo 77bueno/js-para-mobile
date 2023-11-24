@@ -41,4 +41,6 @@ const cursosBlackfriday = cursos.map( curso => {
     return { ...curso, preco: curso.preco * 0.9 }
 } );
 
+const cursosBlackfridayRef = cursos.map( curso => ({...curso, preco: curso.preco * 0.9}) );
+
 console.log(cursosBlackfriday);
