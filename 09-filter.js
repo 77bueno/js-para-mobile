@@ -54,3 +54,11 @@ console.log("Exercício:");
 const cursosCaros = cursos.filter( curso => curso.preco > 600 && curso.categoria == "Front-End" || curso.categoria == "Mobile" );
 
 console.log(cursosCaros);
+
+console.log("-----------------------------------------");
+console.log("Desafio:");
+
+
+const tituloMobile = cursos.filter(curso => curso.categoria == "Mobile").map( curso => curso.titulo );
+
+console.log(tituloMobile);
