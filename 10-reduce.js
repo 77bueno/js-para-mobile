@@ -40,7 +40,7 @@ console.log("---------------------------------");
 console.log("Desafio: ");
 
 const cursosFB = cursos
-    .filter( ( curso => curso.categoria == "Front-End" || curso.categoria == "Back-End" ) )
+    .filter( curso => curso.categoria == "Front-End" || curso.categoria == "Back-End" )
     .reduce( ( acumulador, curso ) =>  acumulador + curso.preco, 0 );
 
 console.log(cursosFB);
