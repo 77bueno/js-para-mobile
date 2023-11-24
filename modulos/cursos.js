@@ -40,6 +40,12 @@ const cursos = [
         titulo: "Figma",
         categoria: "Design",
         preco: 100
+    },
+    {
+        id: 8,
+        titulo: "Photoshop",
+        categoria: "Design",
+        preco: 700
     }
 ];
 
