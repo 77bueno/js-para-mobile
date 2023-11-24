@@ -32,9 +32,7 @@ console.log(acumuladora2);
 console.log("---------------------------------");
 console.log("Soma dos cursos usando reduce: ");
 
-const somaCursos = cursos.reduce( (acumulador, curso) => {
-    return acumulador + curso.preco;
-}, 0);
+const somaCursos = cursos.reduce( (acumulador, curso) => acumulador + curso.preco, 0);
 
 console.log(somaCursos);
 
@@ -46,3 +44,5 @@ const cursosFB = cursos
     .reduce( ( acumulador, curso ) =>  acumulador + curso.preco, 0 );
 
 console.log(cursosFB);
+
+console.log("---------------------------------");
