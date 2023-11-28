@@ -1,7 +1,7 @@
 /* Comunicação assíncrona (AJAX) para
 carregamento de dados usando fetch/then/catch */
 
-const apiUrl = `https://jsonplaceholder.typicode.com/users`;
+const apiUrl = `https://jsonplaceholder.typicode.com/users/3`;
 
 // Conecte/Acesse...
 fetch(apiUrl)
@@ -13,4 +13,6 @@ fetch(apiUrl)
 .then(dados => console.log(dados))
 
 // Em caso de erro (de rede, acesso, no json, gerais), capture o erro
-.catch( error => console.error("Erro na operação: "+error.message) )
+.catch( error => {
+    console.error("Erro na operação: "+error.message) 
+})
