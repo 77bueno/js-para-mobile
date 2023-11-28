@@ -14,7 +14,7 @@ function carregarD(){
             .then(dados => {
                 const usuario = document.getElementById('usuarios');
 
-                dados.forEach(usuarioX => {
+                dados.map(usuarioX => {
                     // Criando elementos HTML para cada usuário
                     const hr = document.createElement('hr');
                     const nome = document.createElement('h3');
